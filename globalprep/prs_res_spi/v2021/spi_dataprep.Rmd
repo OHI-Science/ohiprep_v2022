@@ -400,6 +400,20 @@ abline(0,1, col="red")
 write.csv(spi_calc, "int/Country_spi.csv", row.names=FALSE)
 
 
+other_vars <-  rbind(bhn_data, op_data, fw_data) %>%
+  mutate(gapfill = paste(category, NA_tot, sep = "_")) %>%
+  mutate(score = ifelse(score > 100, 100, score),
+         score = ifelse(score < 0, 0, score)) %>%
+  mutate(method = gapfill) %>%
+  dplyr::select(Country, year, score, method, category)
+
+
+all_together <- spi_calc %>%
+  mutate(category = "spi") %>%
+  dplyr::select(Country, year, score, method, category) %>%
+  rbind(other_vars)
+
+write.csv()
 ```
 
 ## Assign countries to OHI regions
