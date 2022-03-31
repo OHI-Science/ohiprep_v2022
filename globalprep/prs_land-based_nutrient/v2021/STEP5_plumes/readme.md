@@ -43,7 +43,7 @@ mkdir plumes/shp # make new shps folder
 
 cd /home/shares/ohi/git-annex/globalprep/prs_land-based_nutrient/v2021/int/pourpoints_FINAL/
 
-## copy files to the new shp folder you just created
+## copy files to the new shp folder you just created. These shapefiles are shapefiles with pourpoints and the associated amount of nutrient aggregated to each pourpoint.
 
 cp pourpoints_* ~/plumes/shp
 
