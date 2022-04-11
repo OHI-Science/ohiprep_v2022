@@ -32,7 +32,7 @@ exit ## exit grass, and copy ocean_mask_1km.tif to PERMANENT folder, located in 
 
 cp /home/sgclawson/grassdata/ocean_mask_1km.tif /home/sgclawson/grassdata/location/PERMANENT/
 
-# Move your poupoint files into a folder in plumes. 
+# Move your pourpoint files into a folder in plumes. 
 ##first create the folder, called "shp" 
 
 rm -r plumes/shp # remove old shps

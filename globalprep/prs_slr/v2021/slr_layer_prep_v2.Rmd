@@ -238,6 +238,10 @@ foreach(yr = c(1993:maxyr)) %dopar% {
     writeRaster(filename = sprintf("%s/int/msla_annual_mean/msla_annual_%s.tif", dir_prs_slr, yr), 
                 overwrite = TRUE)
 }
+
+
+test <- raster("/home/shares/ohi/git-annex/globalprep/prs_slr/v2021/int/msla_annual_mean/msla_annual_2019.tif")
+plot(test)
 ```
 
 ## Changing the projection and masking

@@ -97,6 +97,10 @@ raw <- stack(file.path(raw_dir, 'WHOI/cesm_co2sys_1958-2016.1x1d.nc'), varname="
 plot(raw[[1]]) #we'll have to rotate the rasters
 plot(rotate(raw[[1]]))
 maps::map('world', col='gray95', fill=T, border='gray80', add=T)
+
+
+
+
 ```
 
 # Historical Mean
